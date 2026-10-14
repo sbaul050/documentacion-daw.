@@ -15,17 +15,31 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://sbaulo050.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentacion-daw/.',
+  import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+const config: Config = {
+  title: 'Documentación DAW',
+  tagline: 'Documentación de la asignatura',
+  favicon: 'img/favicon.ico',
 
-  onBrokenLinks: 'throw',
+  url: 'https://sbaul050.github.io',
+  baseUrl: '/documentacion-daw./',
+  organizationName: 'sbaul050',
+  projectName: 'documentacion-daw.',
+
+  onBrokenLinks: process.env.CI ? 'warn' : 'throw',
+  onBrokenMarkdownLinks: process.env.CI ? 'warn' : 'throw',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  // ...
+};
+export default config;
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
