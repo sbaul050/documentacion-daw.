@@ -13,7 +13,7 @@ const config = {
 
   // URL y baseUrl para GitHub Pages (ajusta si tu repo/usuario es distinto)
   url: 'https://sbaul050.github.io',
-  baseUrl: '/documentacion-daw/',
+  baseUrl: '/documentacion-daw./',
 
   organizationName: 'sbaul050',
   projectName: 'documentacion-daw',
